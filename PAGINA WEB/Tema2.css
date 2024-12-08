@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+body {background-color: white;
+}
+
+#contenedor{
+	background-color: white;
+	width:1300px;
+	height:3000px;
+	margin:auto;
+	margin-top:inherit;
+}
+
+header{
+	background-image:url("de+.jpeg");
+	width:1300px;
+	height:200px;
+}
+
+nav{
+	width: 1300px;
+	height: 100px;
+	background-color: whitesmoke;
+}
+#boton1{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:blueviolet; 
+  color:whitesmoke;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:left;
+	margin-left: 400px;
+}
+#boton1:hover {
+    background-color:black;
+	color:blueviolet;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+#boton2{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:mediumvioletred; 
+  color:whitesmoke;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:left;
+	margin-left: 80px;
+}
+#boton2:hover {
+    background-color:black;
+	color:mediumvioletred;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+#boton3{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:royalblue; 
+  color:whitesmoke;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:right;
+	margin-right: 400px;
+}
+#boton3:hover {
+    background-color:black;
+	color:royalblue;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+
+
+
+section{
+	background-color:whitesmoke;
+	width:1300px;
+	height:2700px;
+}
+
+#co{
+	width: 600px;
+	height: 400px;
+}

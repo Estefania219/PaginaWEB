@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+body {background-color: white;
+}
+
+#contenedor{
+	background-color: white;
+	width:1300px;
+	height:800px;
+	margin:auto;
+	margin-top:inherit;
+}
+
+header{
+	background-image:url("Degradado.jpeg");;
+	width:1300px;
+	height:200px;
+}
+
+section{
+	background-color: white;
+	width:1300px;
+	height:600px;
+}
+
+#imagen1{
+	width: 350px;
+	height: 280px;
+	border-radius:10%;
+	float:left;
+	margin-left: 50px;
+	margin-top: 150px;
+}
+#boton1{
+  width: 310px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:mediumvioletred; 
+  color: white;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 450px;
+	float:left;
+	margin-left: -350px;
+}
+#boton1:hover {
+    background-color:whitesmoke;
+	color:mediumvioletred;/* Color de fondo cuando pasa el ratón */
+
+}
+
+
+
+#imagen2{
+	width: 350px;
+	height: 280px;
+	border-radius:10%;
+	float: left;
+	margin-left: 75px;
+	margin-top: 150px;
+}
+#boton2{
+  width: 310px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:mediumvioletred; 
+  color: white;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 450px;
+	float:left;
+	margin-left: -350px;
+}
+#boton2:hover {
+    background-color:whitesmoke;
+	color:mediumvioletred;/* Color de fondo cuando pasa el ratón */
+
+}
+
+
+#imagen3{
+	width: 350px;
+	height: 280px;
+	border-radius:10%;
+	float:right;
+	margin-right: 50px;
+	margin-top: 150px;
+}
+#boton3{
+  width: 310px;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:mediumvioletred; 
+  color: white;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 20px;
+	float:left;
+	margin-left: 75px;
+}
+
+#boton3:hover {
+    background-color:whitesmoke;
+	color:mediumvioletred;/* Color de fondo cuando pasa el ratón */
+
+}
+

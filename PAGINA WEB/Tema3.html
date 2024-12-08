@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="Tema3.css">
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+</head>
+<body>
+	<div id="contenedor">
+		
+		
+		
+		<header>
+			<br><br><br><br>
+	<p><font face="Stencil" size="8px" color=#FFFFFF><center> CONEXIÓN DE BASE DE DATOS EN LA WEB </center> </font> </p>
+	<br><br><br>
+		</header>
+		
+		<nav>
+			<a href="Inicio.html"><div id="boton1">Inicio</div></a>
+			<a href="Tema1.html"><div id="boton2">Localizador</div></a>
+			<a href="Tema2.html"><div id="boton3">MYSQL</div></a>
+		
+		</nav>
+		
+		
+		
+		<section>
+			<br><br>
+			<p>La conexión a una base de datos desde una aplicación web requiere configurar adecuadamente la base de datos y el backend. A continuación, te proporciono los pasos generales y un ejemplo para establecer esta conexión.</p>
+			
+			<center><h1>1. Preparativos</h1></center>
+			
+			<ul>
+				<li>Elegir el tipo de base de datos: Puede ser SQL (MySQL, PostgreSQL, SQL Server) o NoSQL (MongoDB, Firebase, etc.).</li>
+				<li>
+					Configurar la base de datos:
+					<ul>
+						<li>Crear la base de datos y las tablas o colecciones necesarias.</li>
+						<li>Configurar el usuario, contraseña y permisos para acceder a la base de datos.</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<br><br>
+			<center><h1>2. Elementos comunes</h1></center>
+			<p>Algunos datos básicos necesarios para conectar:</p>
+			
+			<ul>
+				<li>Host: Dirección del servidor (por ejemplo, localhost o IP pública).</li>
+				<li>Puerto: Número de puerto (varía según la base de datos: 3306 para MySQL, 5432 para PostgreSQL, etc.).</li>
+				<li>Nombre de la base de datos: El nombre que usaste al crearla.</li>
+				<li>Usuario y contraseña: Credenciales configuradas para el acceso.</li>
+			
+			</ul>
+			
+			<br><br>
+			<center><h1>3. Ejemplo de conexión</h1></center>
+			<p>A continuación, te muestro cómo conectar una base de datos usando Node.js con MySQL:</p>
+			<h4>Configuración de conexión</h4>
+			<center><img src="co2.png" id="co2"></center>
+			<h4>Uso de la conexión en consultas</h4>
+			<center><img src="co3.png" id="co3"></center>
+			
+			<br><br>
+			<center><h1>4. Buenas prácticas</h1></center>
+			
+			<ul>
+				<li>Archivo .env: Guarda datos sensibles como usuario, contraseña, y host en un archivo .env para mayor seguridad.</li>
+			</ul>
+			
+			<h4>DB_HOST=localhost</h4>
+			<h4>DB_USER=tu_usuario</h4>
+			<h4>DB_PASSWORD=tu_contraseña</h4>
+            <h4>DB_NAME=nombre_base_datos</h4>
+			
+			<ul>
+				<li>Uso de ORM: Considera usar un ORM (como Sequelize para SQL o Mongoose para MongoDB) para manejar la base de datos de manera más eficiente y estructurada.</li>
+                <li>Seguridad: Configura reglas de acceso para evitar ataques como SQL Injection y protege los datos sensibles en tránsito usando conexiones cifradas (TLS/SSL).</li>
+			
+			</ul>
+
+
+
+		</section>
+		</div>
+</body>
+</html>

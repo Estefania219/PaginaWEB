@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="Tema2.css">
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+</head>
+<body>
+	
+	<div id="contenedor">
+		
+		
+		
+		<header>
+			<br><br><br><br>
+	<p><font face="Stencil" size="8px" color=#FFFFFF><center> CONFIGIURACIÓN DE BASE DE DATOS MYSQL EN EL SERVIDOR WEB </center> </font> </p>
+	<br><br><br>
+		</header>
+		
+		<nav>
+			<a href="Inicio.html"><div id="boton1">Inicio</div></a>
+			<a href="Tema1.html"><div id="boton2">Localizador</div></a>
+			<a href="Tema3.html"><div id="boton3">Base de datos</div></a>
+		
+		</nav>
+		
+		
+		
+		
+		
+		<section>
+			<br><br>
+			<p>Configurar una base de datos MySQL en un servidor web implica varios pasos clave para garantizar que la base de datos esté accesible, segura y preparada para ser utilizada por tu aplicación o página web. A continuación, te explico los pasos principales:<p>
+			
+			<center><h1>1. Instalación de MySQL en el Servidor</h1></center>
+			<p>Si MySQL no está instalado en el servidor, debes instalarlo. En un servidor Linux, puedes hacerlo utilizando los siguientes comandos según tu distribución:</p>
+			
+			<ul>
+				<li>En Ubuntu/Debian:</li>
+			
+			</ul>
+			<h4>sudo apt update</h4>
+            <h4>sudo apt install mysql-server</h4>
+			
+			<ul>
+				<li>En CentOS/Red Hat:</li>
+			
+			</ul>
+			<h4>sudo yum install mysql-server</h4>
+			
+			<p>Después de instalar MySQL, inicia el servicio y configúralo para que se inicie automáticamente:</p>
+			<h4>sudo systemctl start mysql</h4>
+            <h4>sudo systemctl enable mysql</h4>
+			
+			<center><h1>2. Configuración Inicial</h1></center>
+			<p>Una vez instalado, es importante asegurar la configuración básica:</p>
+			
+			<ul>
+				<li>Ejecuta el asistente de configuración de seguridad:</li>
+			</ul>
+			
+			<h4>sudo mysql_secure_installation</h4>
+			
+			<p>Esto te permitirá:</p>
+			
+			<ul>
+				<li>Establecer una contraseña para el usuario root.</li>
+<li>Eliminar usuarios anónimos.</li>
+<li>Deshabilitar el acceso remoto al usuario root.</li>
+<li>Eliminar bases de datos de prueba.</li>
+			
+			</ul>
+			
+			<center><h1>3. Creación de la Base de Datos y Usuarios</h1></center>
+			<p>1. Inicia sesión en MySQL como root:</p>
+			<h4>sudo mysql -u root -p</h4>
+			
+			<p>2. Crea una base de datos:</p>
+			<h4>CREATE DATABASE nombre_base_datos;</h4>
+			
+			<p>3. Crea un usuario para la base de datos:</p>
+			<h4>CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'contraseña';</h4>
+			
+			<p>4. Concede permisos al usuario sobre la base de datos:</p>
+			<h4>GRANT ALL PRIVILEGES ON nombre_base_datos.* TO 'nombre_usuario'@'localhost';</h4>
+			
+			<p>5. Aplica los cambios:</p>
+			<h4>FLUSH PRIVILEGES;</h4>
+			
+			<p>6. Sal del cliente MySQL:</p>
+			<h4>exit;</h4>
+			
+			<center><h1>4. Configuración de Conexión Remota (Opcional)</h1></center>
+			<p>Si necesitas que tu base de datos sea accesible de manera remota, realiza los siguientes ajustes:</p>
+			
+			<p>1. Edita el archivo de configuración de MySQL:</p>
+			<h4>sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf</h4>
+			
+			<p>2. Busca la línea que dice bind-address y cámbiala:</p>
+			<h4>bind-address = 0.0.0.0</h4>
+			
+			<p>3. Reinicia MySQL para aplicar los cambios:</p>	
+			<h4>sudo systemctl restart mysql</h4>
+			
+			<p>4. Concede permisos al usuario para acceso remoto:</p>
+			<h4>GRANT ALL PRIVILEGES ON nombre_base_datos.* TO 'nombre_usuario'@'%' IDENTIFIED BY 'contraseña';</h4>
+            <h4>FLUSH PRIVILEGES;</h4>
+			
+			<br><p>Asegúrate de proteger tu servidor con firewalls y restricciones de IP para evitar accesos no autorizados.</p>
+			
+			<center><h1>5. Configuración en el Servidor Web</h1></center>
+			<p>1. Conexión con la Base de Datos desde la Página Web La conexión se establece utilizando un lenguaje como PHP. Asegúrate de tener instalado el controlador de MySQL para PHP:</p>
+			<ul><li>En Ubuntu/Debian:</li></ul>
+			<h4>sudo apt install php-mysql</h4>
+			
+			<ul><li>En CentOS/Red Hat:</li></ul>
+			<h4>sudo yum install php-mysqlnd</h4>
+			
+			<p>2. Ejemplo de Archivo de Conexión en PHP: Crea un archivo config.php con el siguiente contenido:</p>
+			
+			<center><img src="co1.png" id="co"></center>
+			
+			<p>3. Prueba la Conexión: Sube el archivo a tu servidor y accede a él desde el navegador para verificar que la conexión sea exitosa.</p>
+			
+			<center><h1>6. Seguridad Adicional</h1></center>
+			<ul>
+				<li>Firewalls: Configura reglas para permitir el acceso solo desde IP específicas.</li> 
+				<li>Copias de Seguridad: Implementa un sistema de respaldo periódico para tu base de datos.</li>
+				<li>Actualizaciones: Mantén MySQL actualizado para protegerte contra vulnerabilidades.</li>
+			</ul>
+
+			
+			
+			
+
+	
+		</section>
+		</div>
+</body>
+</html>

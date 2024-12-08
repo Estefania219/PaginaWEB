@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {background-color: white;
+}
+
+#contenedor{
+	background-color: white;
+	width:1300px;
+	height:3000px;
+	margin:auto;
+	margin-top:inherit;
+}
+
+header{
+	background-image:url("Degradadotema1.jpeg");
+	width:1300px;
+	height:200px;
+}
+
+nav{
+	width: 1300px;
+	height: 100px;
+	background-color: whitesmoke;
+}
+#boton1{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:#4FC7C0; 
+  color:black;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:left;
+	margin-left: 400px;
+}
+#boton1:hover {
+    background-color:black;
+	color:#4FC7C0;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+#boton2{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:aquamarine; 
+  color:black;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:left;
+	margin-left: 80px;
+}
+#boton2:hover {
+    background-color:black;
+	color:aquamarine;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+#boton3{
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  padding: 10px 20px;        
+  background-color:#4FC7C0; 
+  color:black;  
+  text-align: center;
+  border: none;             
+  border-radius: 10px;        
+  cursor: pointer;           
+  display: inline-flex;      
+  align-items: center;   
+  margin-top: 30px;
+	float:right;
+	margin-right: 400px;
+}
+#boton3:hover {
+    background-color:black;
+	color:#4FC7C0;
+	/* Color de fondo cuando pasa el ratón */
+
+}
+
+
+
+section{
+	background-color:whitesmoke;
+	width:1300px;
+	height:2700px;
+}
+
+#img1{
+	width: 800px;
+	height: 500px;
+	margin-top: 100px;
+}
